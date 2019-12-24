@@ -1,0 +1,135 @@
+= Infos pour Asciidoc
+Pierre Chartrand
+:doctype: article
+:encoding: utf-8
+:icons: font
+:lang: fr
+:toc: left
+:toc-title: Table des matières
+//:numbered:
+
+
+
+// Uncomment next line to set page size (default is A4)
+
+
+== Test de Asciidoctor avec PDF
+A simple http://asciidoc.org[AsciiDoc] document.
+
+== Introduction
+
+Les *caractères* latins fonctionnent sans problèmes  footnote:[la note de bas de page se fait simplement en écriant footnote puis les 2 points!] with square bullets.footnote:[You may choose from square, disc, and circle for the bullet style.]
+
+[square]
+* une première  chose
+* puis une seconde 
+
+
+
+On peut éditer du Asciidoc via Emac, puisque j'ai installer adoc-mode dans Emac. Mais puis-je utiliser le markup de Org mode
+NON. Mais en callant M-x adoc-mode je visualise non pas le résultat html, mais un formatage générique du Asciidoc. PAS TRÈS INTÉRESSANT. Oups mais il est en _live_ après enregistrement. Comme Brackets sans doute.
+
+== Exportation
+
+Ça se fait directement dans le terminal, même sans pandoc. Voir dans Org-mode pour les détails ->
+
+== Éditeurs
+
+=== Bracket
+
+_Brackets_ fonctionne bien, avec preview dans l'app, mais pas dans le navigateur. En plus _Bracket_ offre différents style dans son preview. On pourrait l'utiliser pour notre infolettre, sinon le site un fois Zoho site lâché. On peut aussi tout numéroter ou pas.
+
+=== AsciidocFX
+
+Tout semble *automatique* ici.Il semble qu'on puisse exporter directement d'ici, sans passer par le terminal = *pas très bon* garder via Terminal. *Test en PDF* : ça sort en N&B, un peu genre latex. C'est moins bon avec le bouton d'en haut qu'avec le terminal.
+
+WARNING: some nice text to show inside admonition...
+
+
+
+NOTE: some nice text to show inside admonition...
+
+On peut même faire Copy source dans HTML. pour coller par exemple dans YMLP!
+
+
+==== export PDF
+
+[IMPORTANT]
+====
+Donc avec le terminal (voir org-mode)
+====
+
+=== VSCode
+Le preview dans l'app suit la fenêtre de code, à l'opposé de Bracket qui ne le fait pas.
+
+Et il est _live_ dans le preview, sans enregistrement nécessaire. *Donc peut-être mieux que Brackets*
+
+==== export PDF
+*idem qu'avec FX* : passer par le terminal. VSCode a une commande pour l'export en pdf de l'Asciidoc mais les images ne suivent pas, et le texte est très petit *sans intérêt*.
+
+=== extensions graphiques
+
+
+[chart,pie,file="secim-2014-pie.png",opt="title=titre du graphique en tarte"]
+--
+pommes,  35, orange
+poires,  15,red
+patates,  20
+concombres,  30
+--
+
+[options="header",cols="1,1,1"]
+|===
+|HeadA   |HeadB   |HeadC
+//----------------------
+|tableau   |créé par   |sccidoc editor dans eclipse
+|Row2A   |Row2B   |Row2C
+|Row3A   |Row3B   |Row3C
+|===
+
+
+
+[chart,line,file="secim-2014-line.png", opt="title=nb inscriptions par année"]
+--
+
+2015,  135
+2016,  68
+2017,  120
+2018,  89
+--
+
+textea;owerifn
+
+
+== Conclusion sur les éditeurs
+
+*Utiliser AsciidocFX, et exporter via le terminal*
+En plus il *bold* et _italicise_ abec les Cmd B et I!
+
+== Images
+
+Je n'ai pas mis de imagedir... essayons le relatif :
+
+
+Les *images en ligne* causent problèmes à l'exportation en pdf.
+
+Puis le lien complet : http://www.danse.qc.ca[cie danse Cadence]
+
+image::images/Bruneau-Verret-Hogan-Leclerc-Deschambault.jpg[lorin, 800]
+
+*Ça marche dans les deux cas!* Sauf *pas dans AsciidocFX* mais oui avec le navigateur, l'export etc...
+
+
+== Les ptanuml
+
+Très complet comme options de graphique. Tout est ici : https://plantuml.com/fr/
+
+On peut installer le tout sur l'ordi (à voir..) ou utiliser le seveur en ligne pour produire limage! http://www.plantuml.com/plantuml
+
+=== Quelques exemples
+
+Gant, etc.
+
+== Conclusion
+
+Et voilà!
