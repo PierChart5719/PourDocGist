@@ -13,9 +13,10 @@ Pierre Chartrand
 // Uncomment next line to set page size (default is A4)
 
 
-== Test de Asciidoctor avec PDF
+== Test de Asciidoctor sur Github
 A simple http://asciidoc.org[AsciiDoc] document.
 
+J'édite actuelement en ligne sur Github
 == Introduction
 
 Les *caractères* latins fonctionnent sans problèmes  footnote:[la note de bas de page se fait simplement en écriant footnote puis les 2 points!] with square bullets.footnote:[You may choose from square, disc, and circle for the bullet style.]
